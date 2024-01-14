@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.test</groupId>
+  <artifactId>bom</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  <properties>
+    <fooVersion>1.3</fooVersion>
+    <project2Version>1.0.0</project2Version>
+  </properties>
+ 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.mycompany.app</groupId>
+        <artifactId>foo</artifactId>
+        <version>${fooVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.test</groupId>
+        <artifactId>project2</artifactId>
+        <version>${project2Version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+ 
+ 
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>bfdd1d76ff34-releases</name>
+        <url>http://ec2-52-3-234-14.compute-1.amazonaws.com:8081/artifactory/my-repo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>bfdd1d76ff34-snapshots</name>
+        <url>http://ec2-52-3-234-14.compute-1.amazonaws.com:8081/artifactory/my-repo</url>
+    </snapshotRepository>
+</distributionManagement>
+  <!--<modules>
+    <module>parent</module>
+  </modules>-->
+</project>
