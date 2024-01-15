@@ -7,6 +7,6 @@ package com.mycompany.app;
 public class Foo 
 {
     public void sayFoo() {
-        System.out.println("I'm foo 1.4");
+        System.out.println("I'm foo");
     }
 }

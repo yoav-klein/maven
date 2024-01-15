@@ -41,6 +41,10 @@
       <groupId>com.mycompany.app</groupId>
       <artifactId>foo</artifactId>
     </dependency>
+    <dependency>
+      <groupId>com.mycompany.app</groupId>
+      <artifactId>bar</artifactId>
+    </dependency>
   </dependencies>
 
 

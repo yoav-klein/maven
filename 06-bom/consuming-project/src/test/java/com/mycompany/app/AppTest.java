@@ -17,6 +17,9 @@ public class AppTest
     {
         Foo f = new Foo();
         f.sayFoo();
+
+        Bar b = new Bar();
+        b.sayBar();
         assertTrue( true );
     }
 }

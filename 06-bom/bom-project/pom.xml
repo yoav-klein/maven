@@ -19,9 +19,9 @@
         <version>${fooVersion}</version>
       </dependency>
       <dependency>
-        <groupId>com.test</groupId>
-        <artifactId>project2</artifactId>
-        <version>${project2Version}</version>
+        <groupId>com.mycompany.app</groupId>
+        <artifactId>bar</artifactId>
+        <version>${barVersion}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
